@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Find_write1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="78dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="40dp"
+            android:background="#00ff0000"
+            android:backgroundTint="#FFFFFF"
+            android:text="비문등록"
+            android:textColor="#0B0B0B"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_2"
+            app:layout_constraintTop_toBottomOf="@+id/app_name4" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="78dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="40dp"
+            android:background="#00ff0000"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="입양하기"
+            android:textColor="#0B0B0B"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toEndOf="@+id/btn_4"
+            app:layout_constraintTop_toBottomOf="@+id/app_name4" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="84dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="40dp"
+            android:background="#00ff0000"
+            android:backgroundTint="#FFFFFF"
+            android:text="찾아주세요"
+            android:textColor="#0B0B0B"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_1"
+            app:layout_constraintTop_toBottomOf="@+id/app_name4" />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="84dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="40dp"
+            android:background="#00ff0000"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="발견했어요"
+            android:textColor="#FB9F82"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_name4" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="84dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="40dp"
+            android:background="#00ff0000"
+            android:backgroundTint="#FFFFFF"
+            android:text="찾아줄게요"
+            android:textColor="#0B0B0B"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_3"
+            app:layout_constraintTop_toBottomOf="@+id/app_name4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="찾아줄개"
+        android:textColor="#0B0B0B"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="기본정보"
+        android:textColor="#0B0B0B"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_3" />
+
+    <EditText
+        android:id="@+id/edt_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toEndOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info" />
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="연락처"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_where" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="목격날짜"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info" />
+
+    <TextView
+        android:id="@+id/tv_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="목격장소"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+    <TextView
+        android:id="@+id/tv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="사진"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tel" />
+
+    <EditText
+        android:id="@+id/edt_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toEndOf="@+id/tv_tel"
+        app:layout_constraintTop_toBottomOf="@+id/edt_where" />
+
+    <EditText
+        android:id="@+id/edt_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toEndOf="@+id/tv_where"
+        app:layout_constraintTop_toBottomOf="@+id/edt_find" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="112dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#C6C6C6"
+        android:text="사진첨부"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_img" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#C6C6C6"
+        android:text="등록하기"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus" />
+
+</LinearLayout>
